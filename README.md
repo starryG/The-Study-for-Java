@@ -5,4 +5,4 @@ a repository for recording java learning
 
 all .md files are wrriten in 'Logseq' 
 
-所有的文件md文件都是用Logseq软件写成的
+所有的md文件都是用Logseq软件写成的
