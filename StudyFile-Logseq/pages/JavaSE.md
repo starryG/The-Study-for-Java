@@ -175,17 +175,39 @@
 		  ```
 		-
 	- **CharTest02**
-	- ```java
-	  //关于java中的转义字符
-	  public class CharTest02{
-	  	public static void main(String[] args){
-	      	//普通的't'字符
-	          char c1 = 't';
-	          System.out.println(c1);
-	        
-	        
-	      }
-	  }
-	      
-	  ```
+		- ```java
+		  //关于java中的转义字符
+		  public class CharTest02{
+		  	public static void main(String[] args){
+		      	//普通的't'字符
+		          char c1 = 't';
+		          System.out.println(c1);
+		        
+		        
+		  		// 根据之前所学，以下代码应该报错。
+		  		// 经过测试以下代码 \t 实际上是一个字符，不属于字符串
+		  		// 两个字符合在一起表示一个字符，其中 \t 表示 “制表符tab”
+		  		char c2 = '\t'; //相当于键盘上的tab键
+		  
+		  		System.out.println("abcdef");
+		  		System.out.println("abctdef");
+		  		// \的出现会将紧挨着的后面的字符进行转义。\碰到t表示tab键。
+		  		System.out.println("abc\tdef");
+		  		
+		  		/*
+		  			System.out.println(); 换行
+		  			System.out.print(); 不换行
+		  		*/
+		  		System.out.print("HelloWorld");
+		  		System.out.println("123abcdef");
+		  
+		  		System.out.print("abc");
+		  		//char c3 = 'n'; // 普通的n字符
+		  		char c3 = '\n'; // 换行符
+		  		System.out.print(c3); // System.out.println(c3); 换两行
+		  		System.out.println("def"); 
+		      }
+		  }
+		      
+		  ```
 	-
