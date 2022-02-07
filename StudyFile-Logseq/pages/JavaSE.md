@@ -48,7 +48,7 @@
 			  ```
 			- ![image.png](../assets/image_1644062730850_0.png){:height 241, :width 458}
 		- **关于二进制？**
-			- ![image.png](../assets/image_1644063140819_0.png){:height 104, :width 473}
+			- ![image.png](../assets/image_1644063140819_0.png){:height 66, :width 473}
 			- 十进制转换成二进制
 				- 125 转换成二进制
 				  除以2，余数逆序输出：1111101
@@ -158,7 +158,7 @@
 		        错误1: 不兼容的类型: String无法转换为char
 		        //char c4 = "a";
 		        错误2: 未结束的字符文字
-		       （它认为a后面应该是个'，但是没有读取到该字符，所以报错：“未接束的字符文字”
+		       （它认为a后面应该是个'，但是没有读取到该字符，所以报错：“未结的字符文字”)
 		        //char c5 = 'ab';
 		        错误3: 未结束的字符文字
 		        //char c6 = '1.08';       
@@ -174,3 +174,18 @@
 		  	0
 		  ```
 		-
+	- **CharTest02**
+	- ```java
+	  //关于java中的转义字符
+	  public class CharTest02{
+	  	public static void main(String[] args){
+	      	//普通的't'字符
+	          char c1 = 't';
+	          System.out.println(c1);
+	        
+	        
+	      }
+	  }
+	      
+	  ```
+	-
