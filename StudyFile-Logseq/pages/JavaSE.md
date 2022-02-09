@@ -130,80 +130,93 @@
 	  整数型 byte short int 
 	  浮点型 float double
 	  布尔型 boolean
-	- **CharTest01.java**
-		- ```java
-		  /*
-		    字符型：
-		    char
-		    1、char占用两个字节
-		    2、char的取值范围为：【0 - 65535】
-		    3、char采用unicode编码方式
-		    4、char类型的字面量用单引号括起来
-		    5、char可以存储一个汉字
-		  */
-		  public class CharTest01
-		    public static void main(String[] args){
-		        //char可以存储1个汉字吗？	
-		        //可以的，汉字占用2个字节，java中的char类型占用2个字节，正好。
-		        char c1 = '中';
-		        System.out.println(c1);
-		        char c2 = 'a';
-		        System.out.println(c2);
-		        char c3 = '0'; //0在这里是字符，不是数字
-		        System.out.println(c3); 
-		            
-		        错误1: 不兼容的类型: String无法转换为char
-		        //char c4 = "a";
-		        错误2: 未结束的字符文字
-		       （它认为a后面应该是个'，但是没有读取到该字符，所以报错：“未结的字符文字”)
-		        //char c5 = 'ab';
-		        错误3: 未结束的字符文字
-		        //char c6 = '1.08';       
-		    }
-		    
-		  运行步骤：
-		  	1、javac *.java 把所有.java文件进行编译，生成字节码文件.class
-		  	2、java CharTest01.java 运行CharTest01.java文件
-		  结果：
-		  	C:\Users\Administrator\Desktop>java CharTest01.java
-		  	中
-		  	a
-		  	0
-		  ```
-		-
-	- **CharTest02.java**
-		- ```java
-		  //关于java中的转义字符
-		  public class CharTest02{
-		  	public static void main(String[] args){
-		      	//普通的't'字符
-		          char c1 = 't';
-		          System.out.println(c1);
-		        
-		  	// 根据之前所学，以下代码应该报错。
-		  	// 经过测试以下代码 \t 实际上是一个字符，不属于字符串
-		  	// 两个字符合在一起表示一个字符，其中 \t 表示 “制表符tab”
-		  	char c2 = '\t'; //相当于键盘上的tab键
-		  
-		  	System.out.println("abcdef");
-		  	System.out.println("abctdef");
-		  	// \的出现会将紧挨着的后面的字符进行转义。\碰到t表示tab键。
-		  	System.out.println("abc\tdef");
-		  		
-		  	/*
-		  		System.out.println(); 换行
-		  		System.out.print(); 不换行
-		  	*/
-		  	System.out.print("HelloWorld");
-		  	System.out.println("123abcdef");
-		  
-		  	System.out.print("abc");
-		  	//char c3 = 'n'; // 普通的n字符
-		  	char c3 = '\n'; // 换行符
-		  	System.out.print(c3); // System.out.println(c3); 换两行
-		  	System.out.println("def"); 
-		      }
-		  }
-		      
-		  ```
+- **CharTest01.java**
+	- ```java
+	  /*
+	    字符型：
+	    char
+	    1、char占用两个字节
+	    2、char的取值范围为：【0 - 65535】
+	    3、char采用unicode编码方式
+	    4、char类型的字面量用单引号括起来
+	    5、char可以存储一个汉字
+	  */
+	  public class CharTest01
+	    public static void main(String[] args){
+	        //char可以存储1个汉字吗？	
+	        //可以的，汉字占用2个字节，java中的char类型占用2个字节，正好。
+	        char c1 = '中';
+	        System.out.println(c1);
+	        char c2 = 'a';
+	        System.out.println(c2);
+	        char c3 = '0'; //0在这里是字符，不是数字
+	        System.out.println(c3); 
+	            
+	        错误1: 不兼容的类型: String无法转换为char
+	        //char c4 = "a";
+	        错误2: 未结束的字符文字
+	       （它认为a后面应该是个'，但是没有读取到该字符，所以报错：“未结的字符文字”)
+	        //char c5 = 'ab';
+	        错误3: 未结束的字符文字
+	        //char c6 = '1.08';       
+	    }
+	    
+	  运行步骤：
+	  	1、javac *.java 把所有.java文件进行编译，生成字节码文件.class
+	  	2、java CharTest01.java 运行CharTest01.java文件
+	  结果：
+	  	C:\Users\Administrator\Desktop>java CharTest01.java
+	  	中
+	  	a
+	  	0
+	  ```
+	-
+- **CharTest02.java**
+	- ```java
+	  //关于java中的转义字符
+	  public class CharTest02{
+	  	public static void main(String[] args){
+	      	//普通的't'字符
+	          char c1 = 't';
+	          System.out.println(c1);
+	        
+	  	// 根据之前所学，以下代码应该报错。
+	  	// 经过测试以下代码 \t 实际上是一个字符，不属于字符串
+	  	// 两个字符合在一起表示一个字符，其中 \t 表示 “制表符tab”
+	  	char c2 = '\t'; //相当于键盘上的tab键
+	  
+	  	System.out.println("abcdef");
+	  	System.out.println("abctdef");
+	  	// \的出现会将紧挨着的后面的字符进行转义。\碰到t表示tab键。
+	  	System.out.println("abc\tdef");
+	  		
+	  	/*
+	  		System.out.println(); 换行
+	  		System.out.print(); 不换行
+	  	*/
+	  	System.out.print("HelloWorld");
+	  	System.out.println("123abcdef");
+	  
+	  	System.out.print("abc");
+	  	//char c3 = 'n'; // 普通的n字符
+	  	char c3 = '\n'; // 换行符
+	  	System.out.print(c3); // System.out.println(c3); 换两行
+	  	System.out.println("def"); 
+	      
+	      // 假设现在想在控制台输出一个 ' 字符怎么办？
+	  	System.out.println('''); // 错误: 空字符文字
+	  	// \'表示一个普通不能再普通的单引号字符。（\'联合起来表示一个普通的 '）
+	  		\会把它后面的单引号转变成一个普通的单引号
+	  		System.out.println('\'');
+	  
+	  设现在想在控制台输出一个 ' 字符怎么办？
+	  	// 错误: 空字符文字
+	  	// System.out.println(''');
+	  	// \'表示一个普通不能再普通的单引号字符。（\'联合起来表示一个普通的 '）
+	  	// 即 \ 具有转义作用，它会把它后面的单引号转变成一个普通的单引号
+	  		System.out.println('\'');
+	      }
+	  }
+	      
+	  ```
 	-

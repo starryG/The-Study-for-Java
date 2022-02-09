@@ -1,4 +1,7 @@
 - [[动力节点Java学习目录]]
 	- [[JavaSE]]
--
+- [[读书笔记]]
+	- [[The Razor Edge]]
+- [[歌词]]
+	- [[Frozen]]
 -
