@@ -1,2 +1,19 @@
 file:: [The_Razors_Edge_1644372749582_0.pdf](../assets/The_Razors_Edge_1644372749582_0.pdf)
 file-path:: ../assets/The_Razors_Edge_1644372749582_0.pdf
+
+- misgiving. 
+  ls-type:: annotation
+  hl-page:: 5
+  id:: 6204f744-f2bb-4b5d-ab18-29d13e1e3f55
+- comprehensive 
+  ls-type:: annotation
+  hl-page:: 5
+  id:: 62050a5c-38e6-4329-8ade-fb29dacfda95
+- ophisticated 
+  ls-type:: annotation
+  hl-page:: 5
+  id:: 62051103-726e-4dda-89fe-48f650113804
+- ill-advised 
+  ls-type:: annotation
+  hl-page:: 5
+  id:: 62051170-67c4-4282-ab0d-529ca1d0ccaf

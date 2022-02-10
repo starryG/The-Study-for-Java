@@ -1,7 +1,9 @@
+- [[Daliy Schedula]]
 - [[动力节点Java学习目录]]
 	- [[JavaSE]]
+- [[英语学习]]
+	- [[单词库]]
 - [[读书笔记]]
 	- [[The Razor Edge]]
 - [[歌词]]
 	- [[Frozen]]
--
